@@ -91,8 +91,7 @@ a {
 .attribution {
   font-size: 11px;
   text-align: center;
-  position: absolute;
-  bottom: 0;
+  margin-top: 2em;
 }
 
 .attribution a {

@@ -109,7 +109,7 @@
         height: 100vh;
     }
 
-    main {
+    .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, min(1fr, 200px));
         grid-gap: 1em;

@@ -63,34 +63,34 @@ function WorkBoard({ item, period, name }: {
 export default function Home() {
   const [period, setPeriod] = useState<"daily" | "weekly" | "monthly">("daily");
   return (
-    <>
     <main>
-      <div className="user grid-item">
-        <div className="user_details">
-          <Image src={'/images/image-jeremy.png'} alt={'a picture of jeremy'} width={60} height={60} />
-          <div className="user_intro">
-            <p>Report for</p>
-            <h2><span className="line1">Jeremy</span> Robson</h2>
+      <div className="grid-container">
+        <div className="user grid-item">
+          <div className="user_details">
+            <Image src={'/images/image-jeremy.png'} alt={'a picture of jeremy'} width={60} height={60} />
+            <div className="user_intro">
+              <p>Report for</p>
+              <h2><span className="line1">Jeremy</span> Robson</h2>
+            </div>
+          </div>
+          <div className='period'>
+            <h3 onClick={() => setPeriod("daily")}>Daily</h3>
+            <h3 onClick={() => setPeriod("weekly")}>Weekly</h3>
+            <h3 onClick={() => setPeriod("monthly")}>Monthly</h3>
           </div>
         </div>
-        <div className='period'>
-          <h3 onClick={() => setPeriod("daily")}>Daily</h3>
-          <h3 onClick={() => setPeriod("weekly")}>Weekly</h3>
-          <h3 onClick={() => setPeriod("monthly")}>Monthly</h3>
-        </div>
+        {/* <div className="grid-container"> */}
+          {data.map((item, index) => <WorkBoard item={item}
+            key={item.title}
+            period={period}
+            name={`grid${index}`} />)}
       </div>
-      {/* <div className="grid-container"> */}
-        {data.map((item, index) => <WorkBoard item={item}
-          key={item.title}
-          period={period}
-          name={`grid${index}`} />)}
       {/* </div> */}
-      </main>
 
       <footer className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Your Name Here</a>.
       </footer>
-      </>
+      </main>
   )
 }
