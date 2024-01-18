@@ -1,0 +1,128 @@
+.grid-item .work, .grid-item .time, .user .user_details, .user .period {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.user {
+  background-color: hsl(235, 46%, 20%);
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.user .period {
+  color: hsl(236, 100%, 87%);
+}
+.user .user_details {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 1em;
+}
+.user .user_details p {
+  color: hsl(236, 100%, 87%);
+}
+.user .user_details h2 {
+  font-weight: 500;
+}
+
+.grid-item {
+  border-radius: 1em;
+  margin-top: 1em;
+}
+.grid-item .time p {
+  color: hsl(236, 100%, 87%);
+}
+.grid-item .time h3 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+.grid-item .item {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1em;
+  padding: 0 1em;
+}
+.grid-item .space {
+  display: flex;
+  justify-content: flex-end;
+}
+.grid-item .work {
+  padding: 0 1em;
+  padding-top: 1.5em;
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.grid0 {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.grid1 {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.grid2 {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.grid3 {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.grid4 {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.grid5 {
+  background-color: hsl(43, 84%, 65%);
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min(1fr, 200px));
+    grid-gap: 1em;
+    grid-template-areas: "a b c d" "a e f g";
+  }
+  .user {
+    grid-area: a;
+  }
+  .user .period {
+    display: block;
+    padding: 0;
+    padding: 1em 0 0 1em;
+  }
+  .user .period > * {
+    margin-inline: 0.5em;
+    line-height: 1.5;
+  }
+  .user .user_details {
+    display: block;
+    height: 70%;
+    padding: 2em;
+  }
+  .user .user_details div {
+    margin-top: 2em;
+  }
+  .user .user_details div h2 {
+    line-height: 1.5;
+  }
+  .user .user_details div h2 .line1::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .grid-item {
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .item {
+    height: 80%;
+  }
+  .item .time {
+    display: block;
+  }
+}/*# sourceMappingURL=index.css.map */
