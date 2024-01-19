@@ -20,6 +20,10 @@
         @extend %flex-between;
         color: hsl(236, 100%, 87%);
     }
+    .period > h3:hover {
+        color: #fff;
+        cursor: pointer;
+    }
 
     .user_details {
         @extend %flex-between;

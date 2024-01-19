@@ -13,6 +13,10 @@
 .user .period {
   color: hsl(236, 100%, 87%);
 }
+.user .period > h3:hover {
+  color: #fff;
+  cursor: pointer;
+}
 .user .user_details {
   background-color: hsl(246, 80%, 60%);
   border-radius: 1em;
