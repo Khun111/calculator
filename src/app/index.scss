@@ -115,8 +115,8 @@
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, min(1fr, 200px));
-        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 150px));
+        grid-gap: 2em;
         grid-template-areas:
             "a b c d"
             "a e f g";
