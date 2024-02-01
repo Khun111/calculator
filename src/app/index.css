@@ -1,132 +1,228 @@
-.grid-item .work, .grid-item .time, .user .user_details, .user .period {
+.reset,
+.equals, .grid-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1.5em;
 }
 
-.user {
-  background-color: hsl(235, 46%, 20%);
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+.main-3, .main-2, .main-1 {
+  width: 100vw;
+  height: 100vh;
 }
-.user .period {
-  color: hsl(236, 100%, 87%);
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.user .period > h3:hover {
-  color: #fff;
-  cursor: pointer;
+
+.main-1 {
+  background-color: hsl(222, 26%, 31%);
+  color: hsl(0, 0%, 100%);
 }
-.user .user_details {
-  background-color: hsl(246, 80%, 60%);
-  border-radius: 1em;
+.main-1 .toggle {
+  background-color: hsl(223, 31%, 20%);
 }
-.user .user_details p {
-  color: hsl(236, 100%, 87%);
+.main-1 .result {
+  background-color: hsl(224, 36%, 15%);
 }
-.user .user_details h2 {
-  font-weight: 500;
+.main-1 .grid {
+  background-color: hsl(223, 31%, 20%);
+}
+.main-1 .grid-item,
+.main-1 .equals {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(221, 14%, 31%);
+  box-shadow: 0 0.3rem 0.2rem 0 hsl(224, 28%, 35%);
+  border-radius: 0.5rem;
+}
+.main-1 .DEL,
+.main-1 .reset {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 0.3rem 0.2rem 0 hsl(6, 70%, 34%);
+  border-radius: 0.3rem;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+}
+.main-1 .equals {
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0 0.3rem 0.2rem 0 hsl(28, 16%, 65%);
+  border-radius: 0.3rem;
+}
+
+.main-2 {
+  background-color: hsl(0, 0%, 90%);
+  color: hsl(60, 10%, 19%);
+}
+.main-2 .toggle {
+  background-color: hsl(0, 5%, 81%);
+}
+.main-2 .toggle .radio {
+  transform: translateX(2rem);
+}
+.main-2 .result {
+  background-color: hsl(0, 0%, 93%);
+}
+.main-2 .grid {
+  background-color: hsl(0, 5%, 81%);
+}
+.main-2 .grid-item {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 0.3rem 0.2rem 0 hsl(185, 58%, 25%);
+  border-radius: 0.3rem;
+}
+.main-2 .DEL,
+.main-2 .reset {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0 0.3rem 0.2rem 0 hsl(25, 99%, 27%);
+  border-radius: 0.3rem;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+}
+.main-2 .equals {
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0 0.3rem 0.2rem 0 hsl(35, 11%, 61%);
+  border-radius: 0.3rem;
+}
+
+.main-3 {
+  background-color: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+}
+.main-3 .toggle {
+  background-color: hsl(223, 31%, 20%);
+}
+.main-3 .toggle .radio {
+  transform: translateX(3.5rem);
+}
+.main-3 .result {
+  background-color: hsl(223, 31%, 20%);
+}
+.main-3 .grid {
+  background-color: hsl(223, 31%, 20%);
+}
+.main-3 .grid-item {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0 0.3rem 0.2rem 0 hsl(285, 91%, 52%);
+  border-radius: 0.3rem;
+}
+.main-3 .DEL,
+.main-3 .reset {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0 0.3rem 0.2rem 0 hsl(177, 92%, 70%);
+  border-radius: 0.3rem;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+}
+.main-3 .equals {
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0 0.3rem 0.2rem 0 hsl(290, 70%, 36%);
+  border-radius: 0.3rem;
+}
+
+.toggle {
+  width: 5.5rem;
+  height: 2rem;
+  display: flex;
+  place-items: center;
+  padding: 0.1em;
+  border-radius: 1rem;
+}
+
+.radio {
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: hsl(6, 63%, 50%);
+}
+
+.theme {
+  display: flex;
+  float: right;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.theme .theme-head {
+  margin-right: 0.5em;
+}
+
+.con {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.toggle-con span {
+  letter-spacing: 0.8rem;
+}
+
+.result {
+  height: 4rem;
+  width: 100%;
+  margin-top: 1.25em;
+}
+
+.grid {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1em;
+  display: grid;
+  row-gap: 0.8rem;
+  grid-template-columns: repeat(4, 80px);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding: 1em 0;
+  border-radius: 0.75rem;
 }
 
 .grid-item {
-  border-radius: 1em;
-  margin-top: 1em;
+  width: 65px;
+  height: 65px;
 }
-.grid-item .time p {
-  color: hsl(236, 100%, 87%);
+
+.grid-item:hover, .reset:hover, .equals:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
-.grid-item .time h3 {
-  font-size: 1.75em;
-  font-weight: 500;
+
+.reset,
+.equals {
+  grid-column: span 2;
+  width: 90%;
+  height: 65px;
+  font-size: 16px;
 }
-.grid-item .item {
-  background-color: hsl(235, 46%, 20%);
-  border-radius: 1em;
-  padding: 0 1em;
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
-.grid-item .space {
+
+.result {
   display: flex;
   justify-content: flex-end;
-}
-.grid-item .work {
-  padding: 0 1em;
-  padding-top: 1.5em;
-  font-size: 1.125em;
-  font-weight: 400;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.75rem;
 }
 
-.grid0 {
-  background-color: hsl(15, 100%, 70%);
+@media (min-width: 540px) {
+  .con {
+    width: 65%;
+  }
 }
-
-.grid1 {
-  background-color: hsl(195, 74%, 62%);
+@media (min-width: 768px) {
+  .con {
+    width: 45%;
+  }
 }
-
-.grid2 {
-  background-color: hsl(348, 100%, 68%);
-}
-
-.grid3 {
-  background-color: hsl(145, 58%, 55%);
-}
-
-.grid4 {
-  background-color: hsl(264, 64%, 52%);
-}
-
-.grid5 {
-  background-color: hsl(43, 84%, 65%);
-}
-
-@media (min-width: 600px) {
-  body {
-    display: flex;
-    place-items: center;
-    width: 100vw;
-    height: 100vh;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 150px));
-    grid-gap: 2em;
-    grid-template-areas: "a b c d" "a e f g";
-  }
-  .user {
-    grid-area: a;
-  }
-  .user .period {
-    display: block;
-    padding: 0;
-    padding: 1em 0 0 1em;
-  }
-  .user .period > * {
-    margin-inline: 0.5em;
-    line-height: 1.5;
-  }
-  .user .user_details {
-    display: block;
-    height: 70%;
-    padding: 2em;
-  }
-  .user .user_details div {
-    margin-top: 2em;
-  }
-  .user .user_details div h2 {
-    line-height: 1.5;
-  }
-  .user .user_details div h2 .line1::after {
-    content: "\a";
-    white-space: pre;
-  }
-  .grid-item {
-    margin: 0;
-    padding-bottom: 0;
-  }
-  .item {
-    height: 80%;
-  }
-  .item .time {
-    display: block;
+@media (min-width: 1000px) {
+  .con {
+    width: 30%;
   }
 }/*# sourceMappingURL=index.css.map */
